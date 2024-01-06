@@ -9,14 +9,11 @@ const FlightsListing = ({ navigation, route }) => {
   const { selectedDestination, selectedSource } = route?.params?.payload;
   const [filteredData, setFilteredData] = useState([]);
 
-  const {
-    apiLoad,
-    flightDetails: { result },
-  } = useSelector(state => state?.flights);
+  const { apiLoad, flightDetails } = useSelector(state => state?.flights);
 
   const filterBySelectedCity = () => {
-    if (result?.length > 0) {
-      let newArr = result?.map((item, index) => {
+    if (flightDetails?.result?.length > 0) {
+      let newArr = flightDetails?.result?.map((item, index) => {
         if (
           item?.displayData?.source?.airport?.cityName == selectedSource &&
           item?.displayData?.destination?.airport?.cityName ==
@@ -34,10 +31,10 @@ const FlightsListing = ({ navigation, route }) => {
   const newFun = filterBySelectedCity();
 
   useEffect(() => {
-    if (result?.length > 0) {
+    if (flightDetails?.result?.length > 0) {
       setFilteredData(newFun(selectedDestination, selectedSource));
     }
-  }, [result]);
+  }, [flightDetails]);
 
   const getDateTime = dateTime => {
     var dateObject = new Date(dateTime);
