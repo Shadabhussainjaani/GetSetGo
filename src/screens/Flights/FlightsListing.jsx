@@ -15,26 +15,26 @@ const FlightsListing = ({ navigation, route }) => {
   } = useSelector(state => state?.flights);
 
   const filterBySelectedCity = () => {
-    let newArr = result?.map((item, index) => {
-      if (
-        item?.displayData?.source?.airport?.cityName == selectedSource &&
-        item?.displayData?.destination?.airport?.cityName == selectedDestination
-      ) {
-        return item;
-      }
-    });
-    newArr = newArr.filter(function (element) {
-      return element !== undefined;
-    });
-    return () => newArr;
+    if (result?.length > 0) {
+      let newArr = result?.map((item, index) => {
+        if (
+          item?.displayData?.source?.airport?.cityName == selectedSource &&
+          item?.displayData?.destination?.airport?.cityName ==
+            selectedDestination
+        ) {
+          return item;
+        }
+      });
+      newArr = newArr.filter(function (element) {
+        return element !== undefined;
+      });
+      return () => newArr;
+    }
   };
   const newFun = filterBySelectedCity();
 
   useEffect(() => {
     if (result?.length > 0) {
-      console.log(
-        '🚀 ~ file: FlightsListing.jsx:23 ~ useEffect ~ filterBySelectedCity():',
-      );
       setFilteredData(newFun(selectedDestination, selectedSource));
     }
   }, [result]);
