@@ -1,0 +1,58 @@
+export const SIGN_IN_WITH_EMAIL = "auth/SIGN_IN_WITH_EMAIL";
+export const INIT = "auth/INIT";
+export const INIT_SUCCESS = "auth/INIT_SUCCESS";
+export const USER_DETAILS = "auth/USER_DETAILS";
+export const SCHEDULE_EVENT = "auth/SCHEDULE_EVENT";
+export const SCORE_KEEPER_NAMES = "auth/SCORE_KEEPER_NAMES";
+export const PLAY_AS_TEAM = "auth/PLAY_AS_TEAM";
+export const MANUALLY_SCORE = "auth/MANUALLY_SCORE";
+export const ROUND_AND_POINTS = "auth/ROUND_AND_POINTS";
+export const INVITED_PLAYERS = "auth/INVITED_PLAYERS";
+export const EDITTEAM_NAMES = "auth/EDITTEAM_NAMES";
+export const TEAM_SELECTION = "auth/TEAM_SELECTION";
+export const SELECTED_PLAYER = "auth/SELECTED_PLAYER";
+export const ADD_EVENT_MEMORY = "auth/ADD_EVENT_MEMORY";
+
+//Authentication
+export const SIGN_UP_WITH_MOBILE = "auth/SIGN_UP_WITH_MOBILE";
+export const SIGN_UP_WITH_MOBILE_SUCCESS = "auth/SIGN_UP_WITH_MOBILE_SUCCESS";
+export const SIGN_UP_VERIFY_OTP = "auth/SIGN_UP_VERIFY_OTP";
+export const SIGN_UP_VERIFY_OTP_SUCCESS = "auth/SIGN_UP_VERIFY_OTP_SUCCESS";
+export const SIGN_UP_USER_INFO = "auth/SIGN_UP_USER_INFO";
+export const SIGN_UP_USER_INFO_SUCCESS = "auth/SIGN_UP_USER_INFO_SUCCESS";
+export const SIGNUP_SELECT_AVATAR = "auth/SIGNUP_SELECT_AVATAR"; //get api
+export const SIGNUP_SELECT_AVATAR_SUCCESS = "auth/SIGNUP_SELECT_AVATAR_SUCCESS";
+export const SIGNUP_RESEND_OTP = "auth/SIGNUP_RESEND_OTP";
+//getApi
+export const SIGN_IN = "auth/SIGN_IN";
+export const SIGN_IN_SUCCESS = "auth/SIGN_IN_SUCCESS";
+export const FORGOT_PASSWORD = "auth/FORGOT_PASSWORD";
+export const FORGOT_PASSWORD_SUCCESS = "auth/FORGOT_PASSWORD_SUCCESS";
+export const FORGOT_PASSWORD_VERIFY_OTP = "auth/FORGOT_PASSWORD_VERIFY_OTP";
+export const FORGOT_PASSWORD_VERIFY_OTP_SUCCESS =
+  "auth/FORGOT_PASSWORD_VERIFY_OTP_SUCCESS";
+export const SET_NEW_PASSWORD = "auth/SET_NEW_PASSWORD";
+export const SET_NEW_PASSWORD_SUCCESS = "auth/SET_NEW_PASSWORD_SUCCESS";
+export const SIGN_UP_WITH_MOBILE_ERROR = "auth/SIGN_UP_WITH_MOBILE_ERROR";
+
+//Main Flow
+export const CREATE_EVENT = "auth/CREATE_EVENT";
+export const CREATE_EVENT_SUCCESS = "auth/CREATE_EVENT_SUCCESS";
+//getApi
+export const EXISTING_USER_LIST = "auth/EXISTING_USER_LIST";
+export const EXISTING_USER_LIST_SUCCESS = "auth/EXISTING_USER_LIST_SUCCESS";
+export const SEND_INVITE = "auth/SEND_INVITE";
+export const SEND_INVITE_SUCCESS = "auth/SEND_INVITE_SUCCESS";
+
+export const CLEAR_SEND_INVITE_SUCCESS = "auth/CLEAR_SEND_INVITE_SUCCESS";
+
+export const TEAMS_DATA = "auth/TEAMS_DATA";
+export const GET_GAME = "auth/GET_GAME";
+export const GET_GAME_SUCCESS = "auth/GET_GAME_SUCCESS";
+export const CREATE_GAME = "auth/CREATE_GAME";
+export const CREATE_GAME_SUCCESS = "auth/CREATE_GAME_SUCCESS";
+export const CREATE_GAME_BODY = "auth/CREATE_GAME_BODY";
+export const CREATE_GAME_BODY_SUCCESS = "auth/CREATE_GAME_BODY_SUCCESS";
+export const CREATE_TEAM = "auth/CREATE_TEAM";
+export const CREATE_TEAM_SUCCESS = "auth/CREATE_TEAM_SUCCESS";
+// export const OTHER_PLAYERS = "OTHER_PLAYERS";
